@@ -2,12 +2,22 @@
     display: inline-block;
     height: 500px;
     width: 400px;
-    background-color: blue;
+    background-color: #5E0200;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-right: -4px;
 }
 
+#left2 {
+    display: inline-block;
+    position: absolute;
+    height: 430px;
+    width: 400px;
+    background-color: #C0200D; ;
+    margin-top: -88px;
+    border-bottom-left-radius: 25px;
+    /* border-top-left-radius: 25px; */
+}
 /* top buttons  */
 
 
@@ -18,7 +28,7 @@
     background: aquamarine;
     border-radius: 50%;
     margin-left: 20px;
-    margin-top: 10px
+    margin-top: 8px;
 }
 
 #small-red{
@@ -65,4 +75,38 @@
     margin-top: 70px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    
+}
+
+#statsBox {
+    width: 300px;
+  height: 250px;
+  background: limegreen;
+  border: black 2px solid;
+  border-radius: 20%;
+  margin-top: 30px;
+    margin-left: 20px
+}
+
+#picFrame {
+    width: 300px;
+  height: 250px;
+  position: relative;
+  margin-left: 35px;
+  margin-top: 30px;
+  background: grey;
+  border-radius: 25px;
+  z-index: 1;
+  /* box-shadow: 0 0 15px #003555 inset; */
+}
+
+#picFrame2 {
+    width: 250px;
+    height: 200px;
+    /* z-index: 2; */
+    /* position: relative; */
+    margin-left: 60px;
+    /* margin-top: 30px; */
+    background: white;
+    border-radius: 25px;
 }
