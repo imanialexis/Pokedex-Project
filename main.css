@@ -13,16 +13,16 @@
     position: absolute;
     height: 430px;
     width: 400px;
-    background-color: #C0200D; ;
+    background-color: #C0200D;
+    ;
     margin-top: -88px;
     border-bottom-left-radius: 25px;
     /* border-top-left-radius: 25px; */
 }
+
 /* top buttons  */
 
-
 #large-button {
-   
     height: 60px;
     width: 60px;
     background: aquamarine;
@@ -31,8 +31,7 @@
     margin-top: 8px;
 }
 
-#small-red{
-    
+#small-red {
     background-color: red;
     height: 30px;
     width: 30px;
@@ -40,10 +39,9 @@
     position: relative;
     left: 100px;
     bottom: 40px;
-
 }
 
-#small-yellow{
+#small-yellow {
     background-color: yellow;
     height: 30px;
     width: 30px;
@@ -51,10 +49,9 @@
     position: relative;
     left: 140px;
     bottom: 70px;
-
 }
 
-#small-green{
+#small-green {
     background-color: green;
     height: 30px;
     width: 30px;
@@ -64,9 +61,6 @@
     bottom: 100px;
 }
 
-
-
-
 #right {
     display: inline-block;
     height: 430px;
@@ -75,38 +69,36 @@
     margin-top: 70px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    
 }
 
 #statsBox {
     width: 300px;
-  height: 250px;
-  background: limegreen;
-  border: black 2px solid;
-  border-radius: 20%;
-  margin-top: 30px;
+    height: 250px;
+    background: limegreen;
+    border: black 2px solid;
+    border-radius: 20%;
+    margin-top: 30px;
     margin-left: 20px
 }
 
 #picFrame {
     width: 300px;
-  height: 250px;
-  position: relative;
-  margin-left: 35px;
-  margin-top: 30px;
-  background: grey;
-  border-radius: 25px;
-  z-index: 1;
-  /* box-shadow: 0 0 15px #003555 inset; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    margin-left: 35px;
+    margin-top: 30px;
+    background: grey;
+    border-radius: 25px;
+    z-index: 1;
+    /* box-shadow: 0 0 15px #003555 inset; */
 }
 
 #picFrame2 {
     width: 250px;
     height: 200px;
-    /* z-index: 2; */
-    /* position: relative; */
-    margin-left: 60px;
-    /* margin-top: 30px; */
     background: white;
     border-radius: 25px;
 }
