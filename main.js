@@ -5,7 +5,7 @@
 
 
 
-let pokemonCounter = [];
+
 
 
 class Pokemon {
@@ -16,6 +16,7 @@ class Pokemon {
         this.defense = defense;
         this.abilities = abilities;
         this.image = image;
+
         // this.moves = moves
         // this.types = types
     }
@@ -42,7 +43,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/42/").then((response) => {
     golbat = new Pokemon(name, hp, attack, defense, abilities, image)
     pokemonCounter.push(golbat)
 
-
 })
 
 
@@ -63,7 +63,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/92/").then((response) => {
     gastly = new Pokemon(name, hp, attack, defense, abilities, image)
 
      pokemonCounter.push(gastly)
-
 
 })
 
@@ -86,15 +85,40 @@ axios.get("https://pokeapi.co/api/v2/pokemon/93/").then((response) => {
     let image = data.sprites.front_default;
 
 
+
     haunter = new Pokemon(name, hp, attack, defense, abilities, image)
     pokemonCounter.push(haunter)
 })
 
 
-   
 
 
+class Trainer {
+    constructor(name) {
+        this.name = name
+        this.pokedex = [];
+    }
 
 
+    all() {
+        return this.pokedex;
+    }
+
+    add(pokemonObject) {
+        this.pokedex.push(pokemonObject);
+    }
+
+    get(pokemonName) {
+        for (let i= 0; i<this.pokedex.length; i++) {
+            if(this.pokedex[i] === pokemonName) {
+
+                // figure out how to display this.
+                //display pokemon 
 
 
+            } else {
+                alert("Error, this pokemon does't exist under this trainer")
+            }
+        }
+    }
+}
