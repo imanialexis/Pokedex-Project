@@ -99,7 +99,6 @@ class Trainer {
         this.pokedex = [];
     }
 
-
     all() {
         return this.pokedex;
     }
