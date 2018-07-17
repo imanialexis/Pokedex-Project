@@ -31,7 +31,7 @@ let golbat;
 // Golbat API Call
 axios.get("https://pokeapi.co/api/v2/pokemon/42/").then((response) => {
     let data = response.data;
-    let pokemonName = data.name;
+    let name = data.name;
     let hp = data.stats[5].base_stat;
     let attack = data.stats[4].base_stat;
     let defense = data.stats[3].base_stat;
@@ -54,7 +54,7 @@ let gastly;
 
 axios.get("https://pokeapi.co/api/v2/pokemon/92/").then((response) => {
     let data = response.data;
-    let pokemonName = data.name;
+    let name = data.name;
     let hp = data.stats[5].base_stat;
     let attack = data.stats[4].base_stat;
     let defense = data.stats[3].base_stat;
@@ -74,7 +74,7 @@ let haunter;
 
 axios.get("https://pokeapi.co/api/v2/pokemon/93/").then((response) => {
     let data = response.data;
-    let pokemonName = data.name;
+    let name = data.name;
     let hp = data.stats[5].base_stat;
     let attack = data.stats[4].base_stat;
     let defense = data.stats[3].base_stat;
