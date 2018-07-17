@@ -134,6 +134,9 @@ h5 {
     /* box-shadow: 0 0 15px #003555 inset; */
 }
 
+#picFrame img {
+    vertical-align: middle
+}
 
 #middle {
     width: 30px;

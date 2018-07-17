@@ -9,18 +9,33 @@ let defense = document.getElementById('defense');
 let abilities = document.getElementById('abilities');
 
 
-
+let counter = -1;
 
 rightButton.addEventListener('click', (event) => {
-    for(let i = 0; i < pokemonCounter.length; i++) {
-        name.innerText = pokemonCounter[i].name;
-        hp.innerText = pokemonCounter[i].hp;
-        attack.innerText = pokemonCounter[i].attack;
-        defense.innerText = pokemonCounter[i].defense;
-        abilities.innerText = pokemonCounter[i].abilities[i];
-        pictureFrame.innerHTML = `<img src =${pokemonCounter[i].image}>`;
+    counter++
+    if (counter > pokemonCounter.length -1) {
+        counter = 0;
     }
+    name.innerText = pokemonCounter[counter].name;
+    hp.innerText = `HP : ${pokemonCounter[counter].hp}`;
+    attack.innerText = `Attack : ${pokemonCounter[counter].attack}`;
+    defense.innerText = `Defense : ${pokemonCounter[counter].defense}`;
+    abilities.innerText =  `Ability : ${pokemonCounter[counter].abilities[0]}`;
+    pictureFrame.innerHTML = `<img src =${pokemonCounter[counter].image}>`;
+    
 
 })
 
+leftButton.addEventListener('click', (event) => {
+    counter--
+    if (counter < 0) {
+       counter = pokemonCounter.length -1
+    }
+    name.innerText = pokemonCounter[counter].name;
+    hp.innerText = `HP : ${pokemonCounter[counter].hp}`;
+    attack.innerText = `Attack : ${pokemonCounter[counter].attack}`;
+    defense.innerText = `Defense : ${pokemonCounter[counter].defense}`;
+    abilities.innerText =  `Ability : ${pokemonCounter[counter].abilities[0]}`;
+    pictureFrame.innerHTML = `<img src =${pokemonCounter[counter].image}>`;
 
+})
