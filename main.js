@@ -100,9 +100,9 @@ class Trainer {
         this.pokedex.push(pokemonObject);
     }
 
-    get(pokemon) {
+    get(pokemonName) {
         for (let i= 0; i<this.pokedex.length; i++) {
-            if(this.pokedex[i] === pokemon) {
+            if(this.pokedex[i] === pokemonName) {
 
                 // figure out how to display this.
                 //display pokemon 
