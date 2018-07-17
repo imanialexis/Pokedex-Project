@@ -6,7 +6,8 @@ body{
     
 }
 h4 {
-    text-align: center
+    text-align: center;
+    text-transform: capitalize;
 }
 
 h5 {
