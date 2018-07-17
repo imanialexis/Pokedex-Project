@@ -103,7 +103,10 @@ class Trainer {
     get(pokemon) {
         for (let i= 0; i<this.pokedex.length; i++) {
             if(this.pokedex[i] === pokemon) {
-                display pokemon
+
+                // figure out how to display this.
+                //display pokemon 
+
             } else {
                 alert("Error, this pokemon does't exist under this trainer")
             }
