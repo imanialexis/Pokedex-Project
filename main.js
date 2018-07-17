@@ -5,7 +5,7 @@
 
 
 
-
+pokemonCounter = [];
 
 
 class Pokemon {
