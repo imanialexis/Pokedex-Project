@@ -96,5 +96,17 @@ class Trainer {
         return this.pokedex;
     }
 
-    
+    add(pokemonObject) {
+        this.pokedex.push(pokemonObject);
+    }
+
+    get(pokemon) {
+        for (let i= 0; i<this.pokedex.length; i++) {
+            if(this.pokedex[i] === pokemon) {
+                display pokemon
+            } else {
+                alert("Error, this pokemon does't exist under this trainer")
+            }
+        }
+    }
 }
