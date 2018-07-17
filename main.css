@@ -3,7 +3,7 @@
 #wrapper {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: center; 
 }
 
 
@@ -19,7 +19,8 @@
 }
 
 #left2 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     height: 430px;
     width: 400px;
@@ -30,6 +31,15 @@
     /* border-top-left-radius: 25px; */
 }
 
+
+#start-button {
+    margin-left: 150px;
+}
+
+
+#left-button {
+    margin-left: 140px;
+}
 /* top buttons  */
 
 #large-button {
