@@ -17,7 +17,10 @@ rightButton.addEventListener('click', (event) => {
         hp.innerText = pokemonCounter[i].hp;
         attack.innerText = pokemonCounter[i].attack;
         defense.innerText = pokemonCounter[i].defense;
-        abilities.innerText = pokemonCounter[i].abilities[i]
+        abilities.innerText = pokemonCounter[i].abilities[i];
+        pictureFrame.innerHTML = `<img src =${pokemonCounter[i].image}>`;
     }
 
 })
+
+
