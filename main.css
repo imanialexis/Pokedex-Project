@@ -36,11 +36,11 @@ h5 {
 #left2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
     height: 430px;
     width: 400px;
     background-color: #C0200D;
-    ;
     margin-top: -88px;
     border-bottom-left-radius: 25px;
     /* border-top-left-radius: 25px; */
@@ -48,7 +48,7 @@ h5 {
 
 
 #start-button {
-    margin-left: 150px;
+    margin-left: 168px;
 }
 
 
@@ -133,7 +133,7 @@ h5 {
     border-color: black;
     background: white;
     border-radius: 25px;
-    /* box-shadow: 0 0 15px #003555 inset; */
+    box-shadow: 0 0 15px #003555 inset;
 }
 
 #picFrame img {
@@ -143,11 +143,9 @@ h5 {
 #middle {
     width: 30px;
   height: 430px;
-  /* float: right; */
+ 
   margin-top: 70px;
   box-shadow: 5px 10px 18px black;
-
-  /* margin-right: -1px; */
   background: linear-gradient(to right, #8B0000 0%, red 50%, #8B0000 100%);
 }
 
@@ -200,21 +198,27 @@ h5 {
 } */
 
 
- /* .blueButton {
+ .blueButton {
     width: 30px;
     height: 20px;
     background: linear-gradient(#307BFB 0%, #0530E5 80%);
     margin-top: 10px;
+    /* position: relative;
+    float: left; */
+    /* margin: 0px 8px 3px 2px; */
     border-radius: 5px;
+   
 }
 
  #row1  {
+     margin-top: 20px;
      display: flex;
      flex-direction: row;
-     justify-content: space-evenly;
-     width: 300px
-     
-    
+     /* justify-content: space-evenly;
+     width: 300px */
+} 
 
-}  */
-
+#row2 {
+    display: flex;
+     flex-direction: row;
+}
