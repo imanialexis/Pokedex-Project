@@ -8,7 +8,7 @@ let attack = document.getElementById('attack');
 let defense = document.getElementById('defense');
 let abilities = document.getElementById('abilities');
 let gif = document.getElementById('gif-placeholder');
-
+let pokeball = document.getElementById('pokeball')
 
 let counter = -1;
 
@@ -40,4 +40,8 @@ leftButton.addEventListener('click', (event) => {
     abilities.innerText =  `Ability : ${pokemonCounter[counter].abilities[0]}`;
     pictureFrame.innerHTML = `<img src =${pokemonCounter[counter].image}>`;
 
+})
+
+pokeball.addEventListener('click', (e) => {
+    window.location.reload()
 })
