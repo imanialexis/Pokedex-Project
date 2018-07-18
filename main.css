@@ -180,6 +180,11 @@ h5 {
     font-family: 'Pokemon GB';
 }
 
+#statsBox-content {
+    margin-top: 30px
+
+}
+
 
 #bootstrap-modal{
     margin-top:20px;
