@@ -93,6 +93,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/92.json").then((response
     gastly = new Pokemon(name, hp, attack, defense, abilities, image)
 
     pokemonCounter.push(gastly)
+    lordFinesse.add(gastly)
 
 })
 
@@ -118,6 +119,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/93.json").then((response
 
     haunter = new Pokemon(name, hp, attack, defense, abilities, image)
     pokemonCounter.push(haunter)
+    lordFinesse.add(haunter)
 })
 
 
