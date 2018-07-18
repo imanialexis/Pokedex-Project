@@ -7,13 +7,13 @@ let hp = document.getElementById('hp');
 let attack = document.getElementById('attack');
 let defense = document.getElementById('defense');
 let abilities = document.getElementById('abilities');
-let pikachu = document.getElementById('pika-placeholder');
+let gif = document.getElementById('gif-placeholder');
 
 
 let counter = -1;
 
 rightButton.addEventListener('click', (event) => {
-    pikachu.style.display = 'none';
+    gif.style.display = 'none';
     counter++
     if (counter > pokemonCounter.length -1) {
         counter = 0;
