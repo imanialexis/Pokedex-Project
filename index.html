@@ -17,21 +17,25 @@
             <div id='large-button'> </div>
             <div id='small-red'></div>
             <div id='small-yellow'></div>
-            <div id='small-green'></div> 
-            
+            <div id='small-green'></div>
+
 
             <div id='left2'>
-                
+
                 <div id='picBox'>
-                    <div id='picFrame'><img src='images/catchem.png' id ='gottaCatchEmAll'></div>
+                    <div id='picFrame'>
+                        <img src='images/catchem.png' id='gottaCatchEmAll'>
+                    </div>
                 </div>
-                <div id='start-button'> <img src='images/start.png' height="70" width="80" ></div>
-                
-                <div id='left-and-right-buttons'> 
-                    <img src='images/left.png' id ='left-button'> 
-                    <img src='images/right.png' id='right-button'> 
+                <div id='start-button'>
+                    <img src='images/start.png' height="70" width="80">
                 </div>
-              
+
+                <div id='left-and-right-buttons'>
+                    <img src='images/left.png' id='left-button'>
+                    <img src='images/right.png' id='right-button'>
+                </div>
+
 
             </div>
         </div>
@@ -41,25 +45,79 @@
         <div id='right'>
 
             <div id='statsBox'>
-                <img src='images/pika2.gif' height="235" width="270" id ='gif-placeholder'>
+                <img src='images/pika2.gif' height="235" width="270" id='gif-placeholder'>
 
-                     <h4 id ='pokemonName'></h4>
-                    <h5 id ='hp'></h5>
-                    <h5 id = 'attack'></h5>
-                    <h5 id ='defense'></h5>
-                    <h5 id = 'abilities'></h5> 
+                <h4 id='pokemonName'></h4>
+                <h5 id='hp'></h5>
+                <h5 id='attack'></h5>
+                <h5 id='defense'></h5>
+                <h5 id='abilities'></h5>
 
             </div>
 
 
 
         </div>
+    </div>
 
-        
+        <!-- bootstrap modal -->
+
+        <!-- Button trigger modal -->
+        <div id ='bootstrap-modal'>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Another Finesse Creation
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Made by: Imani Alexis <3 </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                           <p>Made with:</p>
+                           <p>HTML5</p>
+                           <p>Javasript next AKA ES6</p>
+                           <p>CSS3</p>
+                           <p>Sass - compiled by my homie Koala</p>
+                           <p>Handy dandy Bootstrap</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- JQUERY LINK -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!-- BOOTSTRAP LINKS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+            crossorigin="anonymous">
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+
+        <!-- Axios link -->
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="dom.js"> </script>
-        <script src="main.js"> </script>
+
+        <script src="dom.js"></script>
+
+        <script src='modal.js'></script>
+
+        <script src="main.js"></script>
 </body>
 
 </html>

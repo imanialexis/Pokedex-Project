@@ -176,14 +176,20 @@ h5 {
     border: black 2px solid;
     border-radius: 25px; 
     margin-top: 30px;
-    margin-left: 20px
+    margin-left: 20px;
+    font-family: 'Pokemon GB';
 }
 
 
+#bootstrap-modal{
+    margin-top:20px;
+    margin-left: 500px;
+}
+/* 
 #buttonWrapper {
     display: flex;
     flex-direction: row;
-}
+} */
 
 
  /* .blueButton {
