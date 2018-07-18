@@ -7,16 +7,18 @@ let hp = document.getElementById('hp');
 let attack = document.getElementById('attack');
 let defense = document.getElementById('defense');
 let abilities = document.getElementById('abilities');
+let pikachu = document.getElementById('pika-placeholder');
 
 
 let counter = -1;
 
 rightButton.addEventListener('click', (event) => {
+    pikachu.style.display = 'none';
     counter++
     if (counter > pokemonCounter.length -1) {
         counter = 0;
     }
-    name.innerText = pokemonCounter[counter].name;
+    name.innerText = `${pokemonCounter[counter].name}`;
     hp.innerText = `HP : ${pokemonCounter[counter].hp}`;
     attack.innerText = `Attack : ${pokemonCounter[counter].attack}`;
     defense.innerText = `Defense : ${pokemonCounter[counter].defense}`;

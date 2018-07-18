@@ -3,7 +3,30 @@
 //Haunter - https://pokeapi.co/api/v2/pokemon/93/
 
 
+class Trainer {
+    constructor(name) {
+        this.name = name
+        this.pokedex = [];
+    }
 
+    all() {
+        return this.pokedex;
+    }
+
+    add(pokemonObject) {
+        this.pokedex.push(pokemonObject);
+    }
+
+    get(pokemonName) {
+         this.pokedex.find((element) => {
+            return element.name == name
+        })
+    }
+
+}
+
+
+let lordFinesse = new Trainer('Imani');
 
 pokemonCounter = [];
 
@@ -45,6 +68,9 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/42.json").then((response
     golbat = new Pokemon(name, hp, attack, defense, abilities, image)
     pokemonCounter.push(golbat)
 
+    lordFinesse.add(golbat)
+    console.log(lordFinesse)
+
 })
 
 
@@ -66,7 +92,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/92.json").then((response
 
     gastly = new Pokemon(name, hp, attack, defense, abilities, image)
 
-     pokemonCounter.push(gastly)
+    pokemonCounter.push(gastly)
 
 })
 
@@ -97,31 +123,3 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/93.json").then((response
 
 
 
-class Trainer {
-    constructor(name) {
-        this.name = name
-        this.pokedex = [];
-    }
-
-    all() {
-        return this.pokedex;
-    }
-
-    add(pokemonObject) {
-        this.pokedex.push(pokemonObject);
-    }
-
-    get(pokemonName) {
-        for (let i= 0; i<this.pokedex.length; i++) {
-            if(this.pokedex[i] === pokemonName) {
-
-                // figure out how to display this.
-                //display pokemon 
-
-
-            } else {
-                alert("Error, this pokemon does't exist under this trainer")
-            }
-        }
-    }
-}
