@@ -47,14 +47,28 @@ h5 {
 }
 
 
-#start-button {
-    margin-left: 170px;
+#poke-button {
+    margin-left: 170px;   
 }
+
+#poke-button :hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
 
 
 #left-button {
     margin-left: 142px;
 }
+
+
+
+#left-and-right-buttons {
+    cursor: pointer;
+}
+
+
+
 
 #gottaCatchEmAll {
     height: 160px;
@@ -191,6 +205,7 @@ h5 {
 
 #gif-placeholder {
     border-radius: 25px; 
+    margin-top:-3px
 }
 
 #bootstrap-modal{
