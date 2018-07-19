@@ -13,7 +13,8 @@ h5 {
 #wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center; 
+  margin-top: 100px; }
 
 #left {
   display: inline-block;
