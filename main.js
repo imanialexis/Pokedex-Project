@@ -60,7 +60,6 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/42.json").then((response
     let defense = data.stats[3].base_stat;
     let abilities = data.abilities.map((element) => element.ability.name);
     let image = data.sprites.front_default;
-    console.log(name)
 
     // let moves = data.moves.map((element) =>  element.move.name)
     // let types = data.types.map((element) => element.type.name)
