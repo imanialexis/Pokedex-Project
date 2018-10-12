@@ -52,8 +52,11 @@ class Pokemon {
 let golbat;
 
 // Golbat API Call
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/42.json").then((response) => {
+
+
+axios.get("https://fizal.me/pokeapi/api/42.json").then((response) => {
     let data = response.data;
+    console.log(data)
     let name = data.name;
     let hp = data.stats[5].base_stat;
     let attack = data.stats[4].base_stat;
@@ -68,7 +71,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/42.json").then((response
     pokemonCounter.push(golbat)
 
     lordFinesse.add(golbat)
-    console.log(lordFinesse)
+    // console.log(lordFinesse)
 
 })
 
@@ -78,7 +81,7 @@ let gastly;
 
 //API Call for Gastly
 
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/92.json").then((response) => {
+axios.get("https://fizal.me/pokeapi/api/92.json").then((response) => {
     let data = response.data;
     let name = data.name;
     let hp = data.stats[5].base_stat;
@@ -86,7 +89,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/92.json").then((response
     let defense = data.stats[3].base_stat;
     let abilities = data.abilities.map((element) => element.ability.name);
     let image = data.sprites.front_default;
-    console.log(name)
+    // console.log(name)
 
 
     gastly = new Pokemon(name, hp, attack, defense, abilities, image)
@@ -105,7 +108,7 @@ let haunter;
 //"https://pokeapi.co/api/v2/pokemon/93/
 // API call for Haunter
 
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/93.json").then((response) => {
+axios.get("https://fizal.me/pokeapi/api/93.json").then((response) => {
     let data = response.data;
     let name = data.name;
     let hp = data.stats[5].base_stat;
@@ -113,7 +116,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/93.json").then((response
     let defense = data.stats[3].base_stat;
     let abilities = data.abilities.map((element) => element.ability.name);
     let image = data.sprites.front_default;
-    console.log(name)
+    // console.log(name)
 
 
     haunter = new Pokemon(name, hp, attack, defense, abilities, image)
